@@ -107,6 +107,19 @@ export const GRANIZADOS: Product[] = [
     }
   },
   {
+    id: 'maracuya',
+    name: 'Maracuyá',
+    category: 'granizados',
+    description: 'Sabor tropical fresco y vibrante',
+    hasAlcohol: true,
+    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000 },
+    toppings: {
+      '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
+      '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
+      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+    }
+  },
+  {
     id: 'beso-negro',
     name: 'Beso Negro',
     category: 'granizados',
