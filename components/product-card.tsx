@@ -13,11 +13,12 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
   const [selectedSize, setSelectedSize] = useState<Size | null>(null)
   const { addItem } = useCart()
+  const isUnavailable = product.outOfStock === true
 
   const availableSizes = Object.keys(product.prices) as Size[]
 
   const handleAddToCart = () => {
-    if (!selectedSize) return
+    if (!selectedSize || isUnavailable) return
     addItem(product, selectedSize)
     setSelectedSize(null)
   }
@@ -35,6 +36,9 @@ export function ProductCard({ product }: ProductCardProps) {
       <div className="flex items-start justify-between mb-2">
         <div>
           <h3 className="text-sm md:text-lg font-bold text-foreground leading-tight">{product.name}</h3>
+          {isUnavailable && (
+            <p className="text-xs text-destructive/80 mt-1">No disponible</p>
+          )}
           <div className="flex items-center gap-1 mt-1">
             {product.hasAlcohol ? (
               <span className="inline-flex items-center gap-0.5 text-[10px] md:text-xs px-1.5 py-0.5 rounded-full bg-accent/20 text-accent">
@@ -60,11 +64,14 @@ export function ProductCard({ product }: ProductCardProps) {
             return (
               <button
                 key={size}
-                onClick={() => setSelectedSize(size)}
+                onClick={() => !isUnavailable && setSelectedSize(size)}
+                disabled={isUnavailable}
                 className={`flex-1 min-w-[50px] px-1.5 py-1 md:px-3 md:py-2 rounded-md text-[10px] md:text-sm font-medium transition-all ${
-                  selectedSize === size
-                    ? 'bg-primary text-primary-foreground neon-border'
-                    : 'bg-muted/50 text-muted-foreground hover:bg-muted'
+                  isUnavailable
+                    ? 'bg-destructive/10 text-destructive cursor-not-allowed'
+                    : selectedSize === size
+                      ? 'bg-primary text-primary-foreground neon-border'
+                      : 'bg-muted/50 text-muted-foreground hover:bg-muted'
                 }`}
               >
                 <div className="leading-tight">{size}</div>
@@ -76,7 +83,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
         <Button
           onClick={handleAddToCart}
-          disabled={!selectedSize}
+          disabled={!selectedSize || isUnavailable}
           size="sm"
           className="w-full bg-primary hover:bg-primary/90 disabled:opacity-50 text-xs md:text-sm h-7 md:h-9"
         >

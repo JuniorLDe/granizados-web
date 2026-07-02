@@ -7,8 +7,6 @@ import { GRANIZADOS } from '@/lib/products'
 export function GranizadosSection() {
   return (
     <section id="granizados" className="py-20 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-4">

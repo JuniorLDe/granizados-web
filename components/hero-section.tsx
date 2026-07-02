@@ -7,22 +7,6 @@ import { Snowflake, Wine } from 'lucide-react'
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Fondo oscuro con gradiente */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card" />
-      
-      {/* Logo de fondo borroso y transparente */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="relative w-[600px] h-[600px] md:w-[800px] md:h-[800px]">
-          <Image
-            src="/images/logo.jpg"
-            alt=""
-            fill
-            className="object-contain blur-2xl opacity-15 animate-slow-pulse"
-            priority
-          />
-        </div>
-      </div>
-
       {/* Efectos de luz neon sutiles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/3 left-1/4 w-48 h-48 bg-secondary/10 rounded-full blur-3xl" />
@@ -37,9 +21,7 @@ export function HeroSection() {
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
-            <span className="gradient-text">Granizados</span>
-            <br />
-            <span className="text-foreground">con Estilo</span>
+            <span className="gradient-text neon-text">NO ES HIELO, ES PLACER</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl text-pretty">
@@ -61,12 +43,12 @@ export function HeroSection() {
 
           <div className="flex items-center gap-8 mt-12">
             <div className="text-center">
-              <p className="text-3xl font-bold text-secondary">7+</p>
+              <p className="text-3xl font-bold text-secondary">12+</p>
               <p className="text-sm text-muted-foreground">Sabores</p>
             </div>
             <div className="w-px h-10 bg-border" />
             <div className="text-center">
-              <p className="text-3xl font-bold text-primary">3</p>
+              <p className="text-3xl font-bold text-primary">4</p>
               <p className="text-sm text-muted-foreground">Tamanos</p>
             </div>
             <div className="w-px h-10 bg-border" />

@@ -141,3 +141,13 @@
 .animate-slow-pulse {
   animation: slow-pulse 4s ease-in-out infinite;
 }
+
+/* Slow motion effect for video background */
+@keyframes slowMotion {
+  0% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+video {
+  animation: slowMotion 12s linear infinite;
+}

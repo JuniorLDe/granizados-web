@@ -5,8 +5,6 @@ import { MapPin, Phone, Clock } from 'lucide-react'
 export function ContactSection() {
   return (
     <section id="contacto" className="py-20 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -46,8 +44,10 @@ export function ContactSection() {
               <Clock className="h-7 w-7 text-secondary" />
             </div>
             <h3 className="font-bold text-lg mb-2">Horario</h3>
-            <p className="text-muted-foreground">Viernes a Domingo</p>
-            <p className="text-sm text-muted-foreground">5:00 PM - 12:00 AM</p>
+            <p className="text-muted-foreground">Lunes - Jueves</p>
+            <p className="text-sm text-muted-foreground">6:00 PM - 12:00 AM</p>
+            <p className="text-muted-foreground mt-2">Viernes - Domingo</p>
+            <p className="text-sm text-muted-foreground">6:00 PM - 2:00 AM</p>
           </div>
         </div>
 

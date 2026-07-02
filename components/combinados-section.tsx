@@ -15,6 +15,7 @@ export function CombinadosSection() {
     { size: '9oz', price: 9000 },
     { size: '12oz', price: 12000 },
     { size: '16oz', price: 15000 },
+    { size: '22oz', price: 20000 },
   ]
 
   const toggleFlavor = (flavor: string) => {
@@ -34,11 +35,12 @@ export function CombinadosSection() {
       category: 'combinados' as const,
       description: `Mezcla de: ${selectedFlavors.join(', ')}`,
       hasAlcohol: true,
-      prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000 },
+      prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
       toppings: {
         '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
         '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
-        '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+        '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
+        '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
       }
     }
     
@@ -57,8 +59,6 @@ export function CombinadosSection() {
 
   return (
     <section id="combinados" className="py-20 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-4">

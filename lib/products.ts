@@ -1,6 +1,6 @@
 export type ProductCategory = 'granizados' | 'especiales' | 'cremosos' | 'combinados'
 
-export type Size = '9oz' | '12oz' | '16oz'
+export type Size = '9oz' | '12oz' | '16oz' | '22oz'
 
 export interface Product {
   id: string
@@ -12,12 +12,15 @@ export interface Product {
     '9oz'?: number
     '12oz'?: number
     '16oz'?: number
+    '22oz'?: number
   }
   toppings: {
     '9oz'?: string
     '12oz'?: string
     '16oz'?: string
+    '22oz'?: string
   }
+  outOfStock?: boolean
 }
 
 export interface CartItem {
@@ -47,11 +50,12 @@ export const GRANIZADOS: Product[] = [
     category: 'granizados',
     description: 'Granizado intenso con un toque picante y atrevido',
     hasAlcohol: true,
-    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000 },
+    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
       '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
       '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
-      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
+      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
     }
   },
   {
@@ -60,11 +64,12 @@ export const GRANIZADOS: Product[] = [
     category: 'granizados',
     description: 'Sabor dulce y refrescante que te encantara',
     hasAlcohol: true,
-    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000 },
+    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
       '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
       '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
-      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
+      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
     }
   },
   {
@@ -73,11 +78,12 @@ export const GRANIZADOS: Product[] = [
     category: 'granizados',
     description: 'El clasico sabor de chicle que todos amamos',
     hasAlcohol: true,
-    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000 },
+    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
       '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
       '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
-      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
+      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
     }
   },
   {
@@ -86,11 +92,26 @@ export const GRANIZADOS: Product[] = [
     category: 'granizados',
     description: 'Explosion de sabor a mora con un color vibrante',
     hasAlcohol: true,
-    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000 },
+    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
       '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
       '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
-      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
+      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+    }
+  },
+  {
+    id: 'mora-azul-sl',
+    name: 'Mora Azul SL',
+    category: 'granizados',
+    description: 'Sin alcohol, el mismo sabor a mora azul en version refrescante',
+    hasAlcohol: false,
+    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
+    toppings: {
+      '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
+      '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
+      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
+      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
     }
   },
   {
@@ -99,11 +120,12 @@ export const GRANIZADOS: Product[] = [
     category: 'granizados',
     description: 'Sabor agridulce tradicional muy refrescante',
     hasAlcohol: true,
-    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000 },
+    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
       '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
       '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
-      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
+      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
     }
   },
   {
@@ -112,11 +134,12 @@ export const GRANIZADOS: Product[] = [
     category: 'granizados',
     description: 'Sabor tropical fresco y vibrante',
     hasAlcohol: true,
-    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000 },
+    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
       '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
       '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
-      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
+      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
     }
   },
   {
@@ -125,11 +148,12 @@ export const GRANIZADOS: Product[] = [
     category: 'granizados',
     description: 'Misterioso y delicioso, una experiencia unica',
     hasAlcohol: true,
-    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000 },
+    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
       '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
       '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
-      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
+      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
     }
   },
   {
@@ -138,11 +162,12 @@ export const GRANIZADOS: Product[] = [
     category: 'granizados',
     description: 'El clasico Smirnoff en version granizada',
     hasAlcohol: true,
-    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000 },
+    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
       '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
       '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
-      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
+      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
     }
   }
 ]
@@ -154,10 +179,11 @@ export const ESPECIALES: Product[] = [
     category: 'especiales',
     description: 'Sin alcohol. Trozos de mango, 3 lonchas de mango, chamoy, tajin, gomita y bolitas de chamoy',
     hasAlcohol: false,
-    prices: { '12oz': 14000, '16oz': 17000 },
+    prices: { '12oz': 14000, '16oz': 17000, '22oz': 22000 },
     toppings: {
       '12oz': 'Trozos de mango, 3 lonchas de mango, chamoy, tajin, gomita, bolitas de chamoy',
-      '16oz': 'Trozos de mango, 3 lonchas de mango, chamoy, tajin, gomita, bolitas de chamoy, dulce bandera'
+      '16oz': 'Trozos de mango, 3 lonchas de mango, chamoy, tajin, gomita, bolitas de chamoy, dulce bandera',
+      '22oz': 'Trozos de mango, 3 lonchas de mango, chamoy, tajin, gomita, bolitas de chamoy, dulce bandera'
     }
   }
 ]
@@ -169,11 +195,28 @@ export const CREMOSOS: Product[] = [
     category: 'cremosos',
     description: 'Cremoso con chocolate en polvo y licor Baileys',
     hasAlcohol: true,
-    prices: { '9oz': 11000, '12oz': 14000, '16oz': 18000 },
+    outOfStock: true,
+    prices: { '9oz': 11000, '12oz': 14000, '16oz': 18000, '22oz': 22000 },
     toppings: {
       '9oz': 'Chocolate en polvo',
       '12oz': 'Chocolate en polvo',
-      '16oz': 'Chocolate en polvo, gomita dulce bandera'
+      '16oz': 'Chocolate en polvo, gomita dulce bandera',
+      '22oz': 'Chocolate en polvo, gomita dulce bandera'
+    }
+  },
+  {
+    id: 'colo-loco',
+    name: 'Colo Loco',
+    category: 'cremosos',
+    description: 'Cremoso con alcohol, sabor intenso y cremoso',
+    hasAlcohol: true,
+    outOfStock: true,
+    prices: { '9oz': 11000, '12oz': 14000, '16oz': 18000, '22oz': 22000 },
+    toppings: {
+      '9oz': 'Chocolate en polvo',
+      '12oz': 'Chocolate en polvo',
+      '16oz': 'Chocolate en polvo, gomita dulce bandera',
+      '22oz': 'Chocolate en polvo, gomita dulce bandera'
     }
   },
   {
@@ -182,11 +225,12 @@ export const CREMOSOS: Product[] = [
     category: 'cremosos',
     description: 'Sin alcohol. Cremoso con polvo de Quipitos',
     hasAlcohol: false,
-    prices: { '9oz': 11000, '12oz': 14000, '16oz': 18000 },
+    prices: { '9oz': 11000, '12oz': 14000, '16oz': 18000, '22oz': 22000 },
     toppings: {
       '9oz': 'Polvo de Quipitos',
       '12oz': 'Polvo de Quipitos',
-      '16oz': 'Polvo de Quipitos, gomita dulce bandera'
+      '16oz': 'Polvo de Quipitos, gomita dulce bandera',
+      '22oz': 'Polvo de Quipitos, gomita dulce bandera'
     }
   }
 ]
