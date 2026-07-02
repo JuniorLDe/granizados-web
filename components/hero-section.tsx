@@ -19,6 +19,16 @@ export function HeroSection() {
             <Snowflake className="h-4 w-4 text-primary" />
             <span className="text-sm font-medium text-primary">Los Jardines, Cartagena</span>
           </div>
+
+          <div className="mb-8">
+            <Image
+              src="/images/logo-transparent.png"
+              alt="Logo MiSede CTG"
+              width={220}
+              height={120}
+              className="mx-auto h-auto object-contain"
+            />
+          </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
             <span className="gradient-text neon-text">NO ES HIELO, ES PLACER</span>
