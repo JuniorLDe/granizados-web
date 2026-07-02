@@ -55,7 +55,7 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
       </div>
 
-      <p className="text-[10px] md:text-sm text-muted-foreground mb-2 md:mb-4 flex-grow line-clamp-2">{product.description}</p>
+      <p className="text-[10px] md:text-sm text-muted-foreground mb-2 md:mb-4 flex-grow line-clamp-3 md:line-clamp-2 break-words">{product.description}</p>
 
       <div className="space-y-2">
         <div className="flex flex-wrap gap-1">

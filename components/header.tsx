@@ -31,7 +31,7 @@ export function Header() {
               height={50}
               className="rounded-full"
             />
-            <span className="text-xl font-bold gradient-text hidden sm:block">Mi Sede CTG</span>
+            <span className="text-sm sm:text-xl font-bold gradient-text whitespace-nowrap">Mi Sede CTG</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
