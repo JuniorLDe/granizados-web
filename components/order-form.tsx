@@ -17,7 +17,8 @@ export function OrderForm() {
     phone: '',
     email: '',
     address: '',
-    notes: ''
+    notes: '',
+    paymentMethod: 'efectivo'
   })
 
   const formatPrice = (price: number) => {
@@ -46,6 +47,8 @@ export function OrderForm() {
       return detail
     }).join('\n\n')
 
+    const paymentLabel = formData.paymentMethod === 'transferencia' ? 'Transferencia' : 'Efectivo'
+
     const emailBody = `
 NUEVO PEDIDO - MI SEDE CTG
 ==========================
@@ -55,6 +58,7 @@ DATOS DEL CLIENTE:
 - Telefono: ${formData.phone}
 - Email: ${formData.email}
 - Direccion: ${formData.address}
+- Metodo de pago: ${paymentLabel}
 
 PRODUCTOS:
 ${orderDetails}
@@ -75,6 +79,7 @@ Nombre: ${formData.name}
 Telefono: ${formData.phone}
 Email: ${formData.email}
 Direccion: ${formData.address}
+Metodo de pago: ${paymentLabel}
 
 Productos:
 ${orderDetails}
@@ -84,12 +89,12 @@ TOTAL: ${formatPrice(total)}
 Notas adicionales:
 ${formData.notes || 'Ninguna'}`
 
-      const whatsappUrl = `https://wa.me/573107083539?text=${encodeURIComponent(whatsappMessage)}`
+      const whatsappUrl = `https://wa.me/573043949829?text=${encodeURIComponent(whatsappMessage)}`
       window.open(whatsappUrl, '_blank')
 
       setIsSuccess(true)
       clearCart()
-      setFormData({ name: '', phone: '', email: '', address: '', notes: '' })
+      setFormData({ name: '', phone: '', email: '', address: '', notes: '', paymentMethod: 'efectivo' })
       setTimeout(() => setIsSuccess(false), 5000)
     } catch (error) {
       console.error('Error abriendo WhatsApp:', error)
@@ -183,6 +188,32 @@ ${formData.notes || 'Ninguna'}`
                 placeholder="Calle, numero, barrio, referencias..."
                 className="bg-muted/50 min-h-[80px]"
               />
+            </div>
+
+            <div className="space-y-2">
+              <Label>Método de pago *</Label>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 rounded-lg border border-border/60 p-4 bg-muted/30">
+                <label className="flex items-center gap-2 rounded-md border border-transparent p-2 hover:border-primary/40 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="efectivo"
+                    checked={formData.paymentMethod === 'efectivo'}
+                    onChange={(e) => setFormData({ ...formData, paymentMethod: e.target.value })}
+                  />
+                  <span>Efectivo</span>
+                </label>
+                <label className="flex items-center gap-2 rounded-md border border-transparent p-2 hover:border-primary/40 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="transferencia"
+                    checked={formData.paymentMethod === 'transferencia'}
+                    onChange={(e) => setFormData({ ...formData, paymentMethod: e.target.value })}
+                  />
+                  <span>Transferencia</span>
+                </label>
+              </div>
             </div>
 
             <div className="space-y-2">
