@@ -47,16 +47,27 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Link href="#carrito">
-              <Button variant="outline" size="icon" className="relative border-primary/50 hover:border-primary hover:bg-primary/10">
-                <ShoppingCart className="h-5 w-5" />
-                {itemCount > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-accent text-accent-foreground text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
-                    {itemCount}
-                  </span>
-                )}
-              </Button>
-            </Link>
+            <Button
+              variant="outline"
+              size="icon"
+              className="relative border-primary/50 hover:border-primary hover:bg-primary/10"
+              onClick={() => {
+                const el = document.getElementById('carrito')
+                if (el) {
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                } else {
+                  // fallback to anchor
+                  window.location.hash = '#carrito'
+                }
+              }}
+            >
+              <ShoppingCart className="h-5 w-5" />
+              {itemCount > 0 && (
+                <span className="absolute -top-2 -right-2 bg-accent text-accent-foreground text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                  {itemCount}
+                </span>
+              )}
+            </Button>
 
             <Button
               variant="ghost"

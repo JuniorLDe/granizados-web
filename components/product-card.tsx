@@ -64,7 +64,7 @@ export function ProductCard({ product }: ProductCardProps) {
             return (
               <button
                 key={size}
-                onClick={() => !isUnavailable && setSelectedSize(size)}
+                onClick={() => !isUnavailable && setSelectedSize(prev => prev === size ? null : size)}
                 disabled={isUnavailable}
                 className={`flex-1 min-w-[50px] px-1.5 py-1 md:px-3 md:py-2 rounded-md text-[10px] md:text-sm font-medium transition-all ${
                   isUnavailable
@@ -88,8 +88,7 @@ export function ProductCard({ product }: ProductCardProps) {
           className="w-full bg-primary hover:bg-primary/90 disabled:opacity-50 text-xs md:text-sm h-7 md:h-9"
         >
           <Plus className="h-3 w-3 md:h-4 md:w-4 mr-1" />
-          <span className="hidden sm:inline">Agregar</span>
-          <span className="sm:hidden">+</span>
+          <span>Añadir</span>
         </Button>
       </div>
     </div>
