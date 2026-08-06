@@ -40,8 +40,8 @@ export function Footer() {
 
           <div className="text-center md:text-right">
             <p className="text-sm text-muted-foreground">Los Jardines, Cartagena</p>
-            <a href="tel:+573107083539" className="text-sm text-primary hover:text-primary/80">
-              310 708 3539
+            <a href="tel:+573225448723" className="text-sm text-primary hover:text-primary/80">
+              322 544 8723
             </a>
           </div>
         </div>

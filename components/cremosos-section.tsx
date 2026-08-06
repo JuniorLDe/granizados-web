@@ -17,7 +17,7 @@ export function CremososSection() {
             <span className="gradient-text">Cremosos</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Nuestra linea cremosa con sabores unicos. Baileys con alcohol y Quipitos sin alcohol.
+            Nuestra linea cremosa con sabores unicos. Quipitos sin alcohol.
           </p>
         </div>
 

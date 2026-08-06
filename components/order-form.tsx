@@ -89,7 +89,7 @@ TOTAL: ${formatPrice(total)}
 Notas adicionales:
 ${formData.notes || 'Ninguna'}`
 
-      const whatsappUrl = `https://wa.me/573043949829?text=${encodeURIComponent(whatsappMessage)}`
+      const whatsappUrl = `https://wa.me/573225448723?text=${encodeURIComponent(whatsappMessage)}`
       window.open(whatsappUrl, '_blank')
 
       setIsSuccess(true)

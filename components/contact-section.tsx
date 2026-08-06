@@ -31,10 +31,10 @@ export function ContactSection() {
             </div>
             <h3 className="font-bold text-lg mb-2">Telefono</h3>
             <a 
-              href="tel:+573107083539" 
+              href="tel:+573225448723" 
               className="text-primary hover:text-primary/80 transition-colors text-lg font-medium"
             >
-              310 708 3539
+              322 544 8723
             </a>
             <p className="text-sm text-muted-foreground mt-1">WhatsApp disponible</p>
           </div>
@@ -53,7 +53,7 @@ export function ContactSection() {
 
         <div className="mt-12 text-center">
           <a
-            href="https://wa.me/573107083539"
+            href="https://wa.me/573225448723"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-green-600 hover:bg-green-700 text-white font-medium transition-colors"

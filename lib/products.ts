@@ -156,19 +156,6 @@ export const GRANIZADOS: Product[] = [
       '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
     }
   },
-  {
-    id: 'smirnoff-ice',
-    name: 'Smirnoff Ice',
-    category: 'granizados',
-    description: 'El clasico Smirnoff en version granizada',
-    hasAlcohol: true,
-    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
-    toppings: {
-      '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
-      '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
-      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
-      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
-    }
   }
 ]
 
@@ -189,36 +176,6 @@ export const ESPECIALES: Product[] = [
 ]
 
 export const CREMOSOS: Product[] = [
-  {
-    id: 'baileys',
-    name: 'Baileys',
-    category: 'cremosos',
-    description: 'Cremoso con chocolate en polvo y licor Baileys',
-    hasAlcohol: true,
-    outOfStock: true,
-    prices: { '9oz': 11000, '12oz': 14000, '16oz': 18000, '22oz': 22000 },
-    toppings: {
-      '9oz': 'Chocolate en polvo',
-      '12oz': 'Chocolate en polvo',
-      '16oz': 'Chocolate en polvo, gomita dulce bandera',
-      '22oz': 'Chocolate en polvo, gomita dulce bandera'
-    }
-  },
-  {
-    id: 'colo-loco',
-    name: 'Colo Loco',
-    category: 'cremosos',
-    description: 'Cremoso con alcohol, sabor intenso y cremoso',
-    hasAlcohol: true,
-    outOfStock: true,
-    prices: { '9oz': 11000, '12oz': 14000, '16oz': 18000, '22oz': 22000 },
-    toppings: {
-      '9oz': 'Chocolate en polvo',
-      '12oz': 'Chocolate en polvo',
-      '16oz': 'Chocolate en polvo, gomita dulce bandera',
-      '22oz': 'Chocolate en polvo, gomita dulce bandera'
-    }
-  },
   {
     id: 'quipitos',
     name: 'Quipitos',
