@@ -155,7 +155,6 @@ export const GRANIZADOS: Product[] = [
       '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
       '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
     }
-  },
   }
 ]
 
