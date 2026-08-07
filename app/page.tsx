@@ -3,7 +3,6 @@ import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { GranizadosSection } from "@/components/granizados-section"
 import { EspecialesSection } from "@/components/especiales-section"
-import { CremososSection } from "@/components/cremosos-section"
 import { CombinadosSection } from "@/components/combinados-section"
 import { CartSection } from "@/components/cart-section"
 import { OrderForm } from "@/components/order-form"
@@ -19,7 +18,6 @@ export default function HomePage() {
           <HeroSection />
           <GranizadosSection />
           <EspecialesSection />
-          <CremososSection />
           <CombinadosSection />
           <CartSection />
           <OrderForm />

@@ -6,18 +6,18 @@ import { ESPECIALES } from '@/lib/products'
 
 export function EspecialesSection() {
   return (
-    <section id="especiales" className="py-20 relative">
+    <section id="sin-licor" className="py-20 relative">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30 mb-4">
             <Star className="h-4 w-4 text-accent" />
-            <span className="text-sm font-medium text-accent">Sin Alcohol</span>
+            <span className="text-sm font-medium text-accent">Sin Licor</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="gradient-text">Especiales</span>
+            <span className="gradient-text">Sin Licor</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Nuestra seleccion especial sin alcohol, perfecta para disfrutar en cualquier momento.
+            Disfruta nuestros sabores sin alcohol: Maracumoy, Bubbaloo SL, Manzana Verde SL y Quipitos.
           </p>
         </div>
 

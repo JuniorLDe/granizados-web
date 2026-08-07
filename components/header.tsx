@@ -13,8 +13,7 @@ export function Header() {
 
   const navLinks = [
     { href: '#granizados', label: 'Granizados' },
-    { href: '#especiales', label: 'Especiales' },
-    { href: '#cremosos', label: 'Cremosos' },
+    { href: '#sin-licor', label: 'Sin Licor' },
     { href: '#combinados', label: 'Combinados' },
     { href: '#contacto', label: 'Contacto' },
   ]

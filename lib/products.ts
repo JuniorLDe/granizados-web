@@ -46,9 +46,9 @@ export interface OrderData {
 export const GRANIZADOS: Product[] = [
   {
     id: 'ojo-diablo',
-    name: 'Ojo de Diablo',
+    name: 'Ojo de Diablo (Tequila)',
     category: 'granizados',
-    description: 'Granizado intenso con un toque picante y atrevido',
+    description: 'Granizado intenso con un toque picante y tequila',
     hasAlcohol: true,
     prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
@@ -60,9 +60,9 @@ export const GRANIZADOS: Product[] = [
   },
   {
     id: 'tussy',
-    name: 'Tussy',
+    name: 'Tussy (Vodka)',
     category: 'granizados',
-    description: 'Sabor dulce y refrescante que te encantara',
+    description: 'Sabor dulce y refrescante con vodka',
     hasAlcohol: true,
     prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
@@ -74,9 +74,9 @@ export const GRANIZADOS: Product[] = [
   },
   {
     id: 'bubbaloo',
-    name: 'Bubbaloo',
+    name: 'Bubbaloo (Vodka)',
     category: 'granizados',
-    description: 'El clasico sabor de chicle que todos amamos',
+    description: 'El clasico sabor de chicle con vodka',
     hasAlcohol: true,
     prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
@@ -88,9 +88,9 @@ export const GRANIZADOS: Product[] = [
   },
   {
     id: 'mora-azul',
-    name: 'Mora Azul',
+    name: 'Mora Azul (Vodka)',
     category: 'granizados',
-    description: 'Explosion de sabor a mora con un color vibrante',
+    description: 'Explosion de sabor a mora con vodka y un color vibrante',
     hasAlcohol: true,
     prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
@@ -100,25 +100,12 @@ export const GRANIZADOS: Product[] = [
       '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
     }
   },
-  {
-    id: 'mora-azul-sl',
-    name: 'Mora Azul SL',
-    category: 'granizados',
-    description: 'Sin alcohol, el mismo sabor a mora azul en version refrescante',
-    hasAlcohol: false,
-    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
-    toppings: {
-      '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
-      '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
-      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
-      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
-    }
-  },
+
   {
     id: 'tamarindo',
-    name: 'Tamarindo',
+    name: 'Smirnoff Tamarindo',
     category: 'granizados',
-    description: 'Sabor agridulce tradicional muy refrescante',
+    description: 'Sabor agridulce tradicional con un toque de picante muy refrescante',
     hasAlcohol: true,
     prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
@@ -130,9 +117,9 @@ export const GRANIZADOS: Product[] = [
   },
   {
     id: 'maracuya',
-    name: 'Maracuyá',
+    name: 'Maracuyá (Vodka)',
     category: 'granizados',
-    description: 'Sabor tropical fresco y vibrante',
+    description: 'Sabor tropical fresco y vibrante con vodka',
     hasAlcohol: true,
     prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
@@ -144,9 +131,9 @@ export const GRANIZADOS: Product[] = [
   },
   {
     id: 'beso-negro',
-    name: 'Beso Negro',
+    name: 'Manzana Verde (Tequila)',
     category: 'granizados',
-    description: 'Misterioso y delicioso, una experiencia unica',
+    description: 'Fresco sabor de manzana verde con tequila',
     hasAlcohol: true,
     prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
@@ -171,14 +158,53 @@ export const ESPECIALES: Product[] = [
       '16oz': 'Trozos de mango, 3 lonchas de mango, chamoy, tajin, gomita, bolitas de chamoy, dulce bandera',
       '22oz': 'Trozos de mango, 3 lonchas de mango, chamoy, tajin, gomita, bolitas de chamoy, dulce bandera'
     }
-  }
-]
-
-export const CREMOSOS: Product[] = [
+  },
+  {
+    id: 'mora-azul-sl',
+    name: 'Mora Azul SL',
+    category: 'especiales',
+    description: 'Sin alcohol. Refrescante sabor a mora azul sin licor',
+    hasAlcohol: false,
+    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
+    toppings: {
+      '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
+      '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
+      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
+      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+    }
+  },
+  {
+    id: 'bubbaloo-sl',
+    name: 'Bubbaloo SL',
+    category: 'especiales',
+    description: 'Sin alcohol. Sabor a chicle estilo Bubbaloo',
+    hasAlcohol: false,
+    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
+    toppings: {
+      '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
+      '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
+      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
+      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+    }
+  },
+  {
+    id: 'manzana-verde-sl',
+    name: 'Manzana Verde SL',
+    category: 'especiales',
+    description: 'Sin alcohol. Refrescante sabor manzana verde sin licor',
+    hasAlcohol: false,
+    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
+    toppings: {
+      '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
+      '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
+      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
+      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
+    }
+  },
   {
     id: 'quipitos',
     name: 'Quipitos',
-    category: 'cremosos',
+    category: 'especiales',
     description: 'Sin alcohol. Cremoso con polvo de Quipitos',
     hasAlcohol: false,
     prices: { '9oz': 11000, '12oz': 14000, '16oz': 18000, '22oz': 22000 },
@@ -191,6 +217,8 @@ export const CREMOSOS: Product[] = [
   }
 ]
 
-export const ALL_PRODUCTS = [...GRANIZADOS, ...ESPECIALES, ...CREMOSOS]
+export const CREMOSOS: Product[] = []
+
+export const ALL_PRODUCTS = [...GRANIZADOS, ...ESPECIALES]
 
 export const COMBINABLE_FLAVORS = GRANIZADOS.map(g => g.name)

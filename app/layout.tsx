@@ -9,7 +9,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Mi Sede CTG | Granizados con Estilo',
-  description: 'Los mejores granizados de Cartagena. Granizados con alcohol, especiales, cremosos y combinados. Ubicados en Los Jardines.',
+  description: 'Los mejores granizados de Cartagena. Granizados con alcohol, sin licor y combinados. Ubicados en Los Jardines.',
   generator: 'v0.app',
   icons: {
     icon: '/images/logo.jpg',

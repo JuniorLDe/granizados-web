@@ -34,6 +34,7 @@ export function GranizadosSection() {
             <li><span className="text-primary font-medium">9 oz ($9,000):</span> Mini chicles, 2 gomitas de gusano, burbujitas dulces</li>
             <li><span className="text-primary font-medium">12 oz ($12,000):</span> Todo lo anterior + chupeta</li>
             <li><span className="text-primary font-medium">16 oz ($15,000):</span> Todo lo anterior + dulce en forma de bandera</li>
+            <li><span className="text-primary font-medium">22 oz ($20,000):</span> Todo lo anterior + extras especiales</li>
           </ul>
         </div>
       </div>

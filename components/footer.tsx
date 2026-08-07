@@ -24,11 +24,8 @@ export function Footer() {
             <Link href="#granizados" className="text-sm text-muted-foreground hover:text-primary transition-colors">
               Granizados
             </Link>
-            <Link href="#especiales" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              Especiales
-            </Link>
-            <Link href="#cremosos" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              Cremosos
+            <Link href="#sin-licor" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              Sin Licor
             </Link>
             <Link href="#combinados" className="text-sm text-muted-foreground hover:text-primary transition-colors">
               Combinados
