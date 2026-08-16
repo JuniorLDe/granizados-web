@@ -117,9 +117,9 @@ export const GRANIZADOS: Product[] = [
   },
   {
     id: 'maracuya',
-    name: 'Maracuyá (Vodka)',
+    name: 'Maracuyá (Tequila)',
     category: 'granizados',
-    description: 'Sabor tropical fresco y vibrante con vodka',
+    description: 'Sabor tropical fresco y vibrante con tequila',
     hasAlcohol: true,
     prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
@@ -131,9 +131,9 @@ export const GRANIZADOS: Product[] = [
   },
   {
     id: 'beso-negro',
-    name: 'Manzana Verde (Tequila)',
+    name: 'Manzana Verde (Vodka)',
     category: 'granizados',
-    description: 'Fresco sabor de manzana verde con tequila',
+    description: 'Fresco sabor de manzana verde con vodka',
     hasAlcohol: true,
     prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
     toppings: {
