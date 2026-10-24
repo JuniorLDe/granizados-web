@@ -3,10 +3,13 @@
 import { Wine } from 'lucide-react'
 import { ProductCard } from './product-card'
 import { GRANIZADOS } from '@/lib/products'
+import { HalloweenSticker } from '@/components/halloween-sticker'
 
 export function GranizadosSection() {
   return (
     <section id="granizados" className="py-20 relative">
+      <HalloweenSticker kind="pumpkin" className="sticker-menu-pumpkin" />
+      <HalloweenSticker kind="bat" className="sticker-menu-bat" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-4">
@@ -34,7 +37,7 @@ export function GranizadosSection() {
             <li><span className="text-primary font-medium">9 oz ($9,000):</span> Mini chicles, 2 gomitas de gusano, burbujitas dulces</li>
             <li><span className="text-primary font-medium">12 oz ($12,000):</span> Todo lo anterior + chupeta</li>
             <li><span className="text-primary font-medium">16 oz ($15,000):</span> Todo lo anterior + dulce en forma de bandera</li>
-            <li><span className="text-primary font-medium">22 oz ($20,000):</span> Todo lo anterior + extras especiales</li>
+            <li><span className="text-primary font-medium">22 oz ($20,000):</span> Todo lo anterior: mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta y dulce bandera</li>
           </ul>
         </div>
       </div>

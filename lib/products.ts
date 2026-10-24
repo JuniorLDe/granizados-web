@@ -1,4 +1,4 @@
-export type ProductCategory = 'granizados' | 'especiales' | 'cremosos' | 'combinados'
+export type ProductCategory = 'granizados' | 'especiales' | 'combinados'
 
 export type Size = '9oz' | '12oz' | '16oz' | '22oz'
 
@@ -129,20 +129,6 @@ export const GRANIZADOS: Product[] = [
       '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
     }
   },
-  {
-    id: 'beso-negro',
-    name: 'Manzana Verde (Vodka)',
-    category: 'granizados',
-    description: 'Fresco sabor de manzana verde con vodka',
-    hasAlcohol: true,
-    prices: { '9oz': 9000, '12oz': 12000, '16oz': 15000, '22oz': 20000 },
-    toppings: {
-      '9oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces',
-      '12oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta',
-      '16oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera',
-      '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
-    }
-  }
 ]
 
 export const ESPECIALES: Product[] = [
@@ -152,11 +138,10 @@ export const ESPECIALES: Product[] = [
     category: 'especiales',
     description: 'Sin alcohol. Trozos de mango, 3 lonchas de mango, chamoy, tajin, gomita y bolitas de chamoy',
     hasAlcohol: false,
-    prices: { '12oz': 14000, '16oz': 17000, '22oz': 22000 },
+    prices: { '12oz': 14000, '16oz': 17000 },
     toppings: {
       '12oz': 'Trozos de mango, 3 lonchas de mango, chamoy, tajin, gomita, bolitas de chamoy',
-      '16oz': 'Trozos de mango, 3 lonchas de mango, chamoy, tajin, gomita, bolitas de chamoy, dulce bandera',
-      '22oz': 'Trozos de mango, 3 lonchas de mango, chamoy, tajin, gomita, bolitas de chamoy, dulce bandera'
+      '16oz': 'Trozos de mango, 3 lonchas de mango, chamoy, tajin, gomita, bolitas de chamoy, dulce bandera'
     }
   },
   {
@@ -201,23 +186,7 @@ export const ESPECIALES: Product[] = [
       '22oz': 'Mini chicles, 2 gomitas de gusano, burbujitas dulces, chupeta, dulce bandera'
     }
   },
-  {
-    id: 'quipitos',
-    name: 'Quipitos',
-    category: 'especiales',
-    description: 'Sin alcohol. Cremoso con polvo de Quipitos',
-    hasAlcohol: false,
-    prices: { '9oz': 11000, '12oz': 14000, '16oz': 18000, '22oz': 22000 },
-    toppings: {
-      '9oz': 'Polvo de Quipitos',
-      '12oz': 'Polvo de Quipitos',
-      '16oz': 'Polvo de Quipitos, gomita dulce bandera',
-      '22oz': 'Polvo de Quipitos, gomita dulce bandera'
-    }
-  }
 ]
-
-export const CREMOSOS: Product[] = []
 
 export const ALL_PRODUCTS = [...GRANIZADOS, ...ESPECIALES]
 

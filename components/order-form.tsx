@@ -7,6 +7,8 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { useCart } from '@/lib/cart-context'
+import { CONTACT_PHONE_WHATSAPP } from '@/lib/contact'
+import { HalloweenSticker } from '@/components/halloween-sticker'
 
 export function OrderForm() {
   const { items, total, clearCart } = useCart()
@@ -89,7 +91,7 @@ TOTAL: ${formatPrice(total)}
 Notas adicionales:
 ${formData.notes || 'Ninguna'}`
 
-      const whatsappUrl = `https://wa.me/573225448723?text=${encodeURIComponent(whatsappMessage)}`
+      const whatsappUrl = `https://wa.me/${CONTACT_PHONE_WHATSAPP}?text=${encodeURIComponent(whatsappMessage)}`
       window.open(whatsappUrl, '_blank')
 
       setIsSuccess(true)
@@ -109,7 +111,8 @@ ${formData.notes || 'Ninguna'}`
 
   if (isSuccess) {
     return (
-      <section className="py-20">
+      <section className="py-20 relative">
+        <HalloweenSticker kind="witch" className="sticker-order-witch" />
         <div className="container mx-auto px-4">
           <div className="max-w-md mx-auto text-center">
             <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-green-500/20 mb-6">
@@ -126,7 +129,8 @@ ${formData.notes || 'Ninguna'}`
   }
 
   return (
-    <section className="py-20">
+    <section className="py-20 relative">
+      <HalloweenSticker kind="witch" className="sticker-order-witch" />
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

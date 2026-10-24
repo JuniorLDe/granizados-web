@@ -1,10 +1,13 @@
 'use client'
 
 import { MapPin, Phone, Clock } from 'lucide-react'
+import { CONTACT_PHONE_DISPLAY, CONTACT_PHONE_E164, CONTACT_PHONE_WHATSAPP } from '@/lib/contact'
+import { HalloweenSticker } from '@/components/halloween-sticker'
 
 export function ContactSection() {
   return (
     <section id="contacto" className="py-20 relative">
+      <HalloweenSticker kind="pumpkin" className="sticker-contact-pumpkin" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -31,10 +34,10 @@ export function ContactSection() {
             </div>
             <h3 className="font-bold text-lg mb-2">Telefono</h3>
             <a 
-              href="tel:+573225448723" 
+              href={`tel:${CONTACT_PHONE_E164}`} 
               className="text-primary hover:text-primary/80 transition-colors text-lg font-medium"
             >
-              322 544 8723
+              {CONTACT_PHONE_DISPLAY}
             </a>
             <p className="text-sm text-muted-foreground mt-1">WhatsApp disponible</p>
           </div>
@@ -53,7 +56,7 @@ export function ContactSection() {
 
         <div className="mt-12 text-center">
           <a
-            href="https://wa.me/573225448723"
+            href={`https://wa.me/${CONTACT_PHONE_WHATSAPP}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-green-600 hover:bg-green-700 text-white font-medium transition-colors"

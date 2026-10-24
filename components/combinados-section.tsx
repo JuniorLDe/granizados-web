@@ -5,6 +5,7 @@ import { Blend, Plus, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { COMBINABLE_FLAVORS, Size } from '@/lib/products'
 import { useCart } from '@/lib/cart-context'
+import { HalloweenSticker } from '@/components/halloween-sticker'
 
 export function CombinadosSection() {
   const [selectedFlavors, setSelectedFlavors] = useState<string[]>([])
@@ -59,6 +60,8 @@ export function CombinadosSection() {
 
   return (
     <section id="combinados" className="py-20 relative">
+      <HalloweenSticker kind="pumpkin" className="sticker-mix-pumpkin" />
+      <HalloweenSticker kind="bat" className="sticker-mix-bat" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-4">

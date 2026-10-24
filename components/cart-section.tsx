@@ -4,6 +4,7 @@ import { Trash2, Plus, Minus, ShoppingBag } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useCart } from '@/lib/cart-context'
+import { HalloweenSticker } from '@/components/halloween-sticker'
 
 export function CartSection() {
   const { items, removeItem, updateQuantity, updateNotes, total, itemCount } = useCart()
@@ -18,7 +19,8 @@ export function CartSection() {
 
   if (items.length === 0) {
     return (
-      <section id="carrito" className="py-20">
+      <section id="carrito" className="py-20 relative">
+        <HalloweenSticker kind="skull" className="sticker-cart-skull" />
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-muted/50 mb-6">
@@ -36,7 +38,8 @@ export function CartSection() {
   }
 
   return (
-    <section id="carrito" className="py-20">
+    <section id="carrito" className="py-20 relative">
+      <HalloweenSticker kind="skull" className="sticker-cart-skull" />
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-4">

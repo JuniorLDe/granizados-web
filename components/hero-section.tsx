@@ -2,22 +2,26 @@
 
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { Snowflake, Wine } from 'lucide-react'
+import { Skull, Wine } from 'lucide-react'
+import { HalloweenSticker } from '@/components/halloween-sticker'
 
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Efectos de luz neon sutiles */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/3 left-1/4 w-48 h-48 bg-secondary/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
-      </div>
-
+      <HalloweenSticker kind="bat" className="sticker-hero-bat" />
+      <HalloweenSticker kind="witch" className="sticker-hero-witch" />
+      <HalloweenSticker kind="skull" className="sticker-hero-skull" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-6">
-            <Snowflake className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Los Jardines, Cartagena</span>
+            <Skull className="h-4 w-4 text-primary" />
+            <span className="text-sm font-medium text-primary">Noche de brujas en Los Jardines</span>
+          </div>
+
+          <div className="halloween-ribbon mb-6 flex items-center justify-center gap-3" aria-label="Especial de Halloween">
+            <span aria-hidden="true">🎃</span>
+            <span className="text-sm sm:text-base font-bold">TRAGOS QUE DAN ESCALOFRÍOS</span>
+            <span aria-hidden="true">🦇</span>
           </div>
 
           <div className="mb-8">
@@ -35,14 +39,13 @@ export function HeroSection() {
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl text-pretty">
-            Disfruta los granizados mas frios y deliciosos de Cartagena. 
-            Con y sin alcohol, para todos los gustos.
+            Una noche para antojarse: granizados encantados, combinaciones misteriosas y sabores sin licor.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground neon-border" asChild>
               <a href="#granizados" className="flex items-center gap-2">
-                <Wine className="h-5 w-5" />
+                <span aria-hidden="true">🎃</span>
                 Ver Menu
               </a>
             </Button>

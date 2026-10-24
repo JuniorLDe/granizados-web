@@ -3,10 +3,13 @@
 import { Star } from 'lucide-react'
 import { ProductCard } from './product-card'
 import { ESPECIALES } from '@/lib/products'
+import { HalloweenSticker } from '@/components/halloween-sticker'
 
 export function EspecialesSection() {
   return (
     <section id="sin-licor" className="py-20 relative">
+      <HalloweenSticker kind="witch" className="sticker-special-witch" />
+      <HalloweenSticker kind="skull" className="sticker-special-skull" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30 mb-4">
@@ -17,11 +20,11 @@ export function EspecialesSection() {
             <span className="gradient-text">Sin Licor</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Disfruta nuestros sabores sin alcohol: Maracumoy, Bubbaloo SL, Manzana Verde SL y Quipitos.
+            Disfruta nuestros sabores sin alcohol: Maracumoy, Mora Azul SL, Bubbaloo SL y Manzana Verde SL.
           </p>
         </div>
 
-        <div className="max-w-xs md:max-w-md mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4">
           {ESPECIALES.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
@@ -31,10 +34,11 @@ export function EspecialesSection() {
           <h4 className="font-semibold text-foreground mb-2">Maracumoy incluye:</h4>
           <p className="text-sm text-muted-foreground">
             Trozos de mango encima, 3 lonchas de mango, chamoy, tajin, una gomita y bolitas de chamoy.
-            El de 16 oz incluye dulce bandera adicional.
+            El de 16 oz incluye dulce bandera adicional. Maracumoy está disponible en 12 y 16 oz.
           </p>
         </div>
       </div>
     </section>
   )
 }
+

@@ -5,7 +5,7 @@ export function VideoBackground() {
       muted
       loop
       playsInline
-      className="fixed top-0 left-0 w-full h-full object-cover opacity-20 z-0 pointer-events-none"
+      className="halloween-background-video fixed top-0 left-0 w-full h-full object-cover z-0 pointer-events-none"
       style={{
         animation: 'slowMotion 12s linear infinite',
       }}

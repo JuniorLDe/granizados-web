@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { CONTACT_PHONE_DISPLAY, CONTACT_PHONE_E164 } from '@/lib/contact'
 
 export function Footer() {
   return (
@@ -16,7 +17,7 @@ export function Footer() {
             />
             <div>
               <p className="font-bold text-lg gradient-text">Mi Sede CTG</p>
-              <p className="text-sm text-muted-foreground">Granizados con Estilo</p>
+              <p className="text-sm text-muted-foreground">Sabores que embrujan</p>
             </div>
           </div>
 
@@ -36,9 +37,9 @@ export function Footer() {
           </nav>
 
           <div className="text-center md:text-right">
-            <p className="text-sm text-muted-foreground">Los Jardines, Cartagena</p>
-            <a href="tel:+573225448723" className="text-sm text-primary hover:text-primary/80">
-              322 544 8723
+            <p className="text-sm text-muted-foreground">🎃 Los Jardines, Cartagena</p>
+            <a href={`tel:${CONTACT_PHONE_E164}`} className="text-sm text-primary hover:text-primary/80">
+              {CONTACT_PHONE_DISPLAY}
             </a>
           </div>
         </div>
